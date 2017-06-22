@@ -3,12 +3,12 @@ from . import views
 
 def index(request):
 
-    return render(request, 'users/index.html', context)
+    return render(request, './form/templates/index.html', context)
 
 def detail(request):
 
-    return render(request, 'users/snippets.html', context)
+    return render(request, './form/templates/snippets.html', context)
 
 def add(request):
 
-    return render(request, 'users/codeform.html', context)
+    return render(request, 'users/add.html', context)
